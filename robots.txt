@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://damal-cinematic.vercel.app/sitemap.xml
