@@ -1,0 +1,114 @@
+html,
+body {
+  overflow-x: clip;
+}
+
+@media (max-width: 760px) {
+  body {
+    min-width: 0;
+  }
+
+  nav {
+    min-height: 64px !important;
+    height: auto !important;
+    padding: 11px 18px !important;
+    gap: 12px !important;
+    flex-wrap: nowrap !important;
+  }
+
+  nav > div:first-of-type {
+    display: none !important;
+  }
+
+  nav > img,
+  nav > a:first-child img {
+    width: min(120px, 34vw) !important;
+    height: auto !important;
+    max-height: 27px;
+    object-fit: contain;
+  }
+
+  nav > a:last-child {
+    margin-left: auto;
+    padding: 10px 14px !important;
+    font-size: 11px !important;
+    white-space: nowrap !important;
+  }
+
+  [style*="grid-template-columns"] {
+    grid-template-columns: minmax(0, 1fr) !important;
+  }
+
+  [style*="padding"][style*="72px"],
+  [style*="padding"][style*="64px"],
+  [style*="padding"][style*="60px"],
+  [style*="padding"][style*="48px"] {
+    padding-left: 18px !important;
+    padding-right: 18px !important;
+  }
+
+  [style*="min-width"] {
+    min-width: 0 !important;
+  }
+
+  h1 {
+    font-size: clamp(42px, 16vw, 66px) !important;
+    line-height: 0.95 !important;
+    letter-spacing: -1px !important;
+  }
+
+  h2 {
+    font-size: clamp(30px, 11vw, 46px) !important;
+  }
+
+  [style*="font-size:80px"],
+  [style*="font-size:90px"],
+  [style*="font-size:120px"] {
+    font-size: clamp(42px, 16vw, 64px) !important;
+    overflow: visible !important;
+  }
+
+  [style*="position:absolute"][style*="right:64px"] {
+    display: none !important;
+  }
+
+  [style*="min-height:100vh"] {
+    min-height: 100svh !important;
+  }
+
+  [style*="padding-top:70px"] {
+    padding-top: 64px !important;
+  }
+
+  [style*="width:fit-content"] {
+    width: 100% !important;
+  }
+
+  input,
+  select,
+  textarea,
+  button {
+    max-width: 100%;
+    font-size: 16px !important;
+  }
+
+  iframe,
+  img,
+  svg,
+  video {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 420px) {
+  [style*="letter-spacing:5px"],
+  [style*="letter-spacing:4px"] {
+    letter-spacing: 2.5px !important;
+  }
+
+  [style*="display:flex"][style*="gap:14px"] > a {
+    flex: 1 1 100%;
+    justify-content: center;
+    text-align: center;
+  }
+}
