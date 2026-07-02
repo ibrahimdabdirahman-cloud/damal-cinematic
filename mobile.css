@@ -61,26 +61,26 @@ body {
     font-size: clamp(30px, 11vw, 46px) !important;
   }
 
-  [style*="font-size:80px"],
-  [style*="font-size:90px"],
-  [style*="font-size:120px"] {
+  [style*="font-size: 80px"],
+  [style*="font-size: 90px"],
+  [style*="font-size: 120px"] {
     font-size: clamp(42px, 16vw, 64px) !important;
     overflow: visible !important;
   }
 
-  [style*="position:absolute"][style*="right:64px"] {
+  [style*="position: absolute"][style*="right: 64px"] {
     display: none !important;
   }
 
-  [style*="min-height:100vh"] {
+  [style*="min-height: 100vh"] {
     min-height: 100svh !important;
   }
 
-  [style*="padding-top:70px"] {
+  [style*="padding-top: 70px"] {
     padding-top: 64px !important;
   }
 
-  [style*="width:fit-content"] {
+  [style*="width: fit-content"] {
     width: 100% !important;
   }
 
@@ -101,12 +101,12 @@ body {
 }
 
 @media (max-width: 420px) {
-  [style*="letter-spacing:5px"],
-  [style*="letter-spacing:4px"] {
+  [style*="letter-spacing: 5px"],
+  [style*="letter-spacing: 4px"] {
     letter-spacing: 2.5px !important;
   }
 
-  [style*="display:flex"][style*="gap:14px"] > a {
+  [style*="display: flex"][style*="gap: 14px"] > a {
     flex: 1 1 100%;
     justify-content: center;
     text-align: center;
