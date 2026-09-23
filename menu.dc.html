@@ -30,7 +30,7 @@ window.MASUL_MENU=[{"cat": "Breakfast", "name": "Ful Medames", "price": 6}, {"ca
     *{margin:0;padding:0;box-sizing:border-box;}html{scroll-behavior:smooth;}
     body{font-family:'DM Sans',sans-serif;background:#0A1F14;color:#fff;overflow-x:hidden;}
     @keyframes slideLeft{from{transform:translateX(100%);opacity:0;}to{transform:translateX(0);opacity:1;}}
-    input::placeholder{color:rgba(255,255,255,0.3);}
+    input::placeholder{color:rgba(255,255,255,.48);}
     ::-webkit-scrollbar{width:4px;}::-webkit-scrollbar-thumb{background:#2D6A4F;border-radius:2px;}
   </style>
   <style>
@@ -56,13 +56,13 @@ window.MASUL_MENU=[{"cat": "Breakfast", "name": "Ful Medames", "price": 6}, {"ca
   </a>
   <div style="display:flex;align-items:center;gap:36px">
     <a href="menu.dc.html" style="font-size:12px;font-weight:600;color:#C9A84C;text-decoration:none;border-bottom:1px solid #C9A84C;padding-bottom:2px">Menu</a>
-    <a href="about.dc.html" style="font-size:12px;font-weight:500;color:rgba(255,255,255,0.55);text-decoration:none;transition:color 0.2s" style-hover="color:#fff">About</a>
-    <a href="gallery.dc.html" style="font-size:12px;font-weight:500;color:rgba(255,255,255,0.55);text-decoration:none;transition:color 0.2s" style-hover="color:#fff">Gallery</a>
-    <a href="charity.dc.html" style="font-size:12px;font-weight:500;color:rgba(255,255,255,0.55);text-decoration:none;transition:color 0.2s" style-hover="color:#fff">Charity</a>
-    <a href="location.dc.html" style="font-size:12px;font-weight:500;color:rgba(255,255,255,0.55);text-decoration:none;transition:color 0.2s" style-hover="color:#fff">Location</a>
+    <a href="about.dc.html" style="font-size:12px;font-weight:500;color:rgba(255,255,255,.79);text-decoration:none;transition:color 0.2s" style-hover="color:#fff">About</a>
+    <a href="gallery.dc.html" style="font-size:12px;font-weight:500;color:rgba(255,255,255,.79);text-decoration:none;transition:color 0.2s" style-hover="color:#fff">Gallery</a>
+    <a href="charity.dc.html" style="font-size:12px;font-weight:500;color:rgba(255,255,255,.79);text-decoration:none;transition:color 0.2s" style-hover="color:#fff">Charity</a>
+    <a href="location.dc.html" style="font-size:12px;font-weight:500;color:rgba(255,255,255,.79);text-decoration:none;transition:color 0.2s" style-hover="color:#fff">Location</a>
   </div>
   <div style="display:flex;align-items:center;gap:14px">
-    <a href="account.dc.html" style="font-size:12px;font-weight:500;color:rgba(255,255,255,0.5);text-decoration:none;transition:color 0.2s" style-hover="color:#fff">Sign In</a>
+    <a href="account.dc.html" style="font-size:12px;font-weight:500;color:rgba(255,255,255,.79);text-decoration:none;transition:color 0.2s" style-hover="color:#fff">Sign In</a>
     <div onClick="{{ toggleCart }}" style="position:relative;cursor:pointer;display:flex;align-items:center;gap:8px;background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.12);border-radius:2px;padding:9px 16px;transition:background 0.2s" style-hover="background:rgba(255,255,255,0.12)">
       <span>🛒</span>
       <span style="font-size:12px;font-weight:600">{{ cartLabel }}</span>
@@ -78,7 +78,7 @@ window.MASUL_MENU=[{"cat": "Breakfast", "name": "Ful Medames", "price": 6}, {"ca
 <section style="padding:140px 60px 80px;background:linear-gradient(to bottom,#060F0A,#0A1F14);text-align:center;border-bottom:1px solid rgba(255,255,255,0.06)">
   <div style="font-size:10px;font-weight:600;letter-spacing:5px;text-transform:uppercase;color:#C9A84C;margin-bottom:16px">Damal Restaurant</div>
   <h1 style="font-family:'Cormorant Garamond',serif;font-size:clamp(56px,7vw,88px);font-weight:600;color:#fff;line-height:0.95;margin-bottom:16px">The Menu</h1>
-  <p style="font-size:15px;font-weight:300;color:rgba(255,255,255,0.45);max-width:440px;margin:0 auto;line-height:1.7">All dishes are prepared fresh daily. Mains served with rice or pasta. Federation (half &amp; half) +£1.</p>
+  <p style="font-size:15px;font-weight:300;color:rgba(255,255,255,.79);max-width:440px;margin:0 auto;line-height:1.7">All dishes are prepared fresh daily. Mains served with rice or pasta. Federation (half &amp; half) +£1.</p>
 </section>
 
 <!-- PLATTERS FEATURE -->
@@ -94,7 +94,7 @@ window.MASUL_MENU=[{"cat": "Breakfast", "name": "Ful Medames", "price": 6}, {"ca
           </div>
           <div style="padding:20px">
             <div style="font-family:'Cormorant Garamond',serif;font-size:20px;font-weight:600;color:#fff;margin-bottom:6px">{{ p.name }}</div>
-            <div style="font-size:12px;color:rgba(255,255,255,0.38);line-height:1.6;margin-bottom:16px">{{ p.desc }}</div>
+            <div style="font-size:12px;color:rgba(255,255,255,.48);line-height:1.6;margin-bottom:16px">{{ p.desc }}</div>
             <div style="display:flex;align-items:center;justify-content:space-between">
               <div style="font-family:'Cormorant Garamond',serif;font-size:24px;font-weight:600;color:#C9A84C">{{ p.priceStr }}</div>
               <div onClick="{{ p.onAdd }}" style="background:#2D6A4F;color:#fff;border:none;border-radius:2px;padding:8px 18px;font-size:11px;font-weight:600;letter-spacing:1px;text-transform:uppercase;cursor:pointer;transition:background 0.2s" style-hover="background:#40916C">Add</div>
@@ -129,7 +129,7 @@ window.MASUL_MENU=[{"cat": "Breakfast", "name": "Ful Medames", "price": 6}, {"ca
                 <div style="background:#C9A84C;color:#0A1F14;font-size:8px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;padding:3px 8px;border-radius:2px">{{ item.tag }}</div>
               </sc-if>
             </div>
-            <div style="font-size:12px;color:rgba(255,255,255,0.35);line-height:1.5">{{ item.desc }}</div>
+            <div style="font-size:12px;color:rgba(255,255,255,.48);line-height:1.5">{{ item.desc }}</div>
           </div>
           <div style="flex-shrink:0;display:flex;flex-direction:column;align-items:flex-end;gap:10px">
             <div style="font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:600;color:#C9A84C">{{ item.priceStr }}</div>
@@ -149,15 +149,15 @@ window.MASUL_MENU=[{"cat": "Breakfast", "name": "Ful Medames", "price": 6}, {"ca
       <div style="padding:28px;border-bottom:1px solid rgba(255,255,255,0.07);display:flex;align-items:center;justify-content:space-between">
         <div>
           <div style="font-family:'Cormorant Garamond',serif;font-size:26px;font-weight:600">Your Order</div>
-          <div style="font-size:12px;color:rgba(255,255,255,0.38);margin-top:2px">{{ cartCount }} items</div>
+          <div style="font-size:12px;color:rgba(255,255,255,.48);margin-top:2px">{{ cartCount }} items</div>
         </div>
-        <div onClick="{{ toggleCart }}" style="cursor:pointer;width:36px;height:36px;border:1px solid rgba(255,255,255,0.12);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:16px;color:rgba(255,255,255,0.4);transition:all 0.2s" style-hover="color:#fff;border-color:rgba(255,255,255,0.3)">✕</div>
+        <div onClick="{{ toggleCart }}" style="cursor:pointer;width:36px;height:36px;border:1px solid rgba(255,255,255,0.12);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:16px;color:rgba(255,255,255,.48);transition:all 0.2s" style-hover="color:#fff;border-color:rgba(255,255,255,0.3)">✕</div>
       </div>
       <div style="flex:1;overflow-y:auto;padding:20px 28px">
         <sc-if value="{{ cartEmpty }}" hint-placeholder-val="{{ false }}">
           <div style="text-align:center;padding:60px 0">
             <div style="font-size:40px;margin-bottom:16px;opacity:0.3">🛒</div>
-            <div style="font-family:'Cormorant Garamond',serif;font-size:22px;color:rgba(255,255,255,0.4)">Your cart is empty</div>
+            <div style="font-family:'Cormorant Garamond',serif;font-size:22px;color:rgba(255,255,255,.48)">Your cart is empty</div>
             <div style="font-size:13px;color:rgba(255,255,255,0.22);margin-top:8px">Add something delicious</div>
           </div>
         </sc-if>
@@ -165,10 +165,10 @@ window.MASUL_MENU=[{"cat": "Breakfast", "name": "Ful Medames", "price": 6}, {"ca
           <div style="display:flex;align-items:center;justify-content:space-between;gap:14px;padding:16px 0;border-bottom:1px solid rgba(255,255,255,0.05)">
             <div style="flex:1">
               <div style="font-size:14px;font-weight:500;margin-bottom:2px">{{ ci.name }}</div>
-              <div style="font-size:12px;color:rgba(255,255,255,0.35)">{{ ci.priceStr }} each</div>
+              <div style="font-size:12px;color:rgba(255,255,255,.48)">{{ ci.priceStr }} each</div>
             </div>
             <div style="display:flex;align-items:center;gap:10px">
-              <div onClick="{{ ci.onRemove }}" style="width:28px;height:28px;border:1px solid rgba(255,255,255,0.14);border-radius:50%;display:flex;align-items:center;justify-content:center;cursor:pointer;font-size:15px;color:rgba(255,255,255,0.5);transition:all 0.2s" style-hover="border-color:#C9A84C;color:#C9A84C">−</div>
+              <div onClick="{{ ci.onRemove }}" style="width:28px;height:28px;border:1px solid rgba(255,255,255,0.14);border-radius:50%;display:flex;align-items:center;justify-content:center;cursor:pointer;font-size:15px;color:rgba(255,255,255,.79);transition:all 0.2s" style-hover="border-color:#C9A84C;color:#C9A84C">−</div>
               <span style="font-size:14px;font-weight:600;min-width:16px;text-align:center">{{ ci.qty }}</span>
               <div onClick="{{ ci.onAdd }}" style="width:28px;height:28px;background:#2D6A4F;border-radius:50%;display:flex;align-items:center;justify-content:center;cursor:pointer;font-size:15px;transition:background 0.2s" style-hover="background:#40916C">+</div>
             </div>
@@ -178,12 +178,12 @@ window.MASUL_MENU=[{"cat": "Breakfast", "name": "Ful Medames", "price": 6}, {"ca
       </div>
       <div style="padding:20px 28px;border-top:1px solid rgba(255,255,255,0.07)">
         <div style="display:flex;justify-content:space-between;margin-bottom:6px">
-          <span style="font-size:13px;color:rgba(255,255,255,0.45)">Subtotal</span>
+          <span style="font-size:13px;color:rgba(255,255,255,.79)">Subtotal</span>
           <span style="font-family:'Cormorant Garamond',serif;font-size:20px;font-weight:600">{{ cartTotal }}</span>
         </div>
-        <div style="font-size:11px;color:rgba(255,255,255,0.25);margin-bottom:20px">Free delivery on orders over £25</div>
+        <div style="font-size:11px;color:rgba(255,255,255,.48);margin-bottom:20px">Free delivery on orders over £25</div>
         <a data-masul-open="order" href="order.dc.html" style="display:block;width:100%;background:#2D6A4F;color:#fff;border:none;border-radius:2px;padding:15px;font-family:'DM Sans',sans-serif;font-size:12px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;cursor:pointer;text-align:center;text-decoration:none;transition:background 0.2s;margin-bottom:10px" style-hover="background:#40916C">Proceed to Checkout →</a>
-        <div onClick="{{ clearCart }}" style="text-align:center;font-size:12px;color:rgba(255,255,255,0.3);cursor:pointer;padding:8px;transition:color 0.2s" style-hover="color:rgba(255,255,255,0.6)">Clear order</div>
+        <div onClick="{{ clearCart }}" style="text-align:center;font-size:12px;color:rgba(255,255,255,.48);cursor:pointer;padding:8px;transition:color 0.2s" style-hover="color:rgba(255,255,255,.79)">Clear order</div>
       </div>
     </div>
   </div>
@@ -194,12 +194,12 @@ window.MASUL_MENU=[{"cat": "Breakfast", "name": "Ful Medames", "price": 6}, {"ca
   <div style="max-width:1280px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:20px">
     <img src="/img/logo.png" alt="Damal" style="height:24px;object-fit:contain;filter:brightness(0) invert(1);opacity:0.4">
     <div style="display:flex;gap:28px">
-      <a href="home.dc.html" style="font-size:12px;color:rgba(255,255,255,0.3);text-decoration:none;transition:color 0.2s" style-hover="color:#fff">Home</a>
-      <a href="about.dc.html" style="font-size:12px;color:rgba(255,255,255,0.3);text-decoration:none;transition:color 0.2s" style-hover="color:#fff">About</a>
-      <a href="gallery.dc.html" style="font-size:12px;color:rgba(255,255,255,0.3);text-decoration:none;transition:color 0.2s" style-hover="color:#fff">Gallery</a>
-      <a href="location.dc.html" style="font-size:12px;color:rgba(255,255,255,0.3);text-decoration:none;transition:color 0.2s" style-hover="color:#fff">Location</a>
+      <a href="home.dc.html" style="font-size:12px;color:rgba(255,255,255,.48);text-decoration:none;transition:color 0.2s" style-hover="color:#fff">Home</a>
+      <a href="about.dc.html" style="font-size:12px;color:rgba(255,255,255,.48);text-decoration:none;transition:color 0.2s" style-hover="color:#fff">About</a>
+      <a href="gallery.dc.html" style="font-size:12px;color:rgba(255,255,255,.48);text-decoration:none;transition:color 0.2s" style-hover="color:#fff">Gallery</a>
+      <a href="location.dc.html" style="font-size:12px;color:rgba(255,255,255,.48);text-decoration:none;transition:color 0.2s" style-hover="color:#fff">Location</a>
     </div>
-    <p style="font-size:12px;color:rgba(255,255,255,0.15)">© 2026 Damal Restaurant</p>
+    <p style="font-size:12px;color:rgba(255,255,255,.46)">© 2026 Damal Restaurant</p>
   </div>
 </footer>
 

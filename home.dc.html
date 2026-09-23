@@ -33,7 +33,7 @@ window.MASUL_MENU=[{"cat": "Breakfast", "name": "Ful Medames", "price": 6}, {"ca
     @keyframes fadeUp{from{opacity:0;transform:translateY(28px);}to{opacity:1;transform:translateY(0);}}
     @keyframes fadeIn{from{opacity:0;}to{opacity:1;}}
     @keyframes scrollPulse{0%,100%{transform:translateY(0);}50%{transform:translateY(8px);}}
-    input::placeholder{color:rgba(255,255,255,0.35);}
+    input::placeholder{color:rgba(255,255,255,.48);}
     input[type=date]::-webkit-calendar-picker-indicator{filter:invert(1);opacity:0.5;cursor:pointer;}
     select option{background:#1B4332;color:#fff;}
   </style>
@@ -81,7 +81,7 @@ window.MASUL_MENU=[{"cat": "Breakfast", "name": "Ful Medames", "price": 6}, {"ca
       <a data-masul-open="booking" href="#reserve" style="background:transparent;border:1px solid rgba(255,255,255,0.3);color:rgba(255,255,255,0.88);font-size:12px;font-weight:500;letter-spacing:2px;text-transform:uppercase;padding:15px 40px;border-radius:2px;text-decoration:none;transition:border-color 0.25s" style-hover="border-color:rgba(255,255,255,0.7)">Book a Table</a>
     </div>
     <div style="animation:fadeIn 1s 1.6s ease both;margin-top:80px;display:flex;flex-direction:column;align-items:center;gap:10px">
-      <div style="font-size:9px;font-weight:600;letter-spacing:4px;text-transform:uppercase;color:rgba(255,255,255,0.28)">Scroll</div>
+      <div style="font-size:9px;font-weight:600;letter-spacing:4px;text-transform:uppercase;color:rgba(255,255,255,.46)">Scroll</div>
       <div style="animation:scrollPulse 2s ease-in-out infinite;width:1px;height:44px;background:linear-gradient(to bottom,rgba(201,168,76,0.5),transparent)"></div>
     </div>
   </div>
@@ -93,7 +93,7 @@ window.MASUL_MENU=[{"cat": "Breakfast", "name": "Ful Medames", "price": 6}, {"ca
     </div>
     <div>
       <div style="font-family:'Cormorant Garamond',serif;font-size:15px;color:#fff;margin-bottom:2px">Watch Our Story</div>
-      <div style="font-size:9px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,0.36)">2 min · @ShotsByIman</div>
+      <div style="font-size:9px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,.48)">2 min · @ShotsByIman</div>
     </div>
   </div>
 </section>
@@ -102,22 +102,22 @@ window.MASUL_MENU=[{"cat": "Breakfast", "name": "Ful Medames", "price": 6}, {"ca
 <div style="background:#2D6A4F;padding:22px 64px;display:flex;justify-content:center;gap:0;align-items:center">
   <div style="text-align:center;flex:1;max-width:220px">
     <div style="font-family:'Cormorant Garamond',serif;font-size:30px;font-weight:600;color:#F0E6C8;line-height:1">2024</div>
-    <div style="font-size:10px;font-weight:600;letter-spacing:2.5px;text-transform:uppercase;color:rgba(255,255,255,0.52);margin-top:4px">Established</div>
+    <div style="font-size:10px;font-weight:600;letter-spacing:2.5px;text-transform:uppercase;color:rgba(255,255,255,.79);margin-top:4px">Established</div>
   </div>
   <div style="width:1px;height:44px;background:rgba(255,255,255,0.14)"></div>
   <div style="text-align:center;flex:1;max-width:220px">
     <div style="font-family:'Cormorant Garamond',serif;font-size:30px;font-weight:600;color:#F0E6C8;line-height:1">East London</div>
-    <div style="font-size:10px;font-weight:600;letter-spacing:2.5px;text-transform:uppercase;color:rgba(255,255,255,0.52);margin-top:4px">Location</div>
+    <div style="font-size:10px;font-weight:600;letter-spacing:2.5px;text-transform:uppercase;color:rgba(255,255,255,.79);margin-top:4px">Location</div>
   </div>
   <div style="width:1px;height:44px;background:rgba(255,255,255,0.14)"></div>
   <div style="text-align:center;flex:1;max-width:220px">
     <div style="font-family:'Cormorant Garamond',serif;font-size:30px;font-weight:600;color:#F0E6C8;line-height:1">100%</div>
-    <div style="font-size:10px;font-weight:600;letter-spacing:2.5px;text-transform:uppercase;color:rgba(255,255,255,0.52);margin-top:4px">Authentic Somali</div>
+    <div style="font-size:10px;font-weight:600;letter-spacing:2.5px;text-transform:uppercase;color:rgba(255,255,255,.79);margin-top:4px">Authentic Somali</div>
   </div>
   <div style="width:1px;height:44px;background:rgba(255,255,255,0.14)"></div>
   <div style="text-align:center;flex:1;max-width:220px">
     <div style="font-family:'Cormorant Garamond',serif;font-size:30px;font-weight:600;color:#F0E6C8;line-height:1">Halal</div>
-    <div style="font-size:10px;font-weight:600;letter-spacing:2.5px;text-transform:uppercase;color:rgba(255,255,255,0.52);margin-top:4px">Certified</div>
+    <div style="font-size:10px;font-weight:600;letter-spacing:2.5px;text-transform:uppercase;color:rgba(255,255,255,.79);margin-top:4px">Certified</div>
   </div>
 </div>
 
@@ -132,12 +132,12 @@ window.MASUL_MENU=[{"cat": "Breakfast", "name": "Ful Medames", "price": 6}, {"ca
       <div style="cursor:pointer;border-radius:3px;overflow:hidden;background:{{ cat.bg }};background-size:cover;background-position:{{ cat.pos }};background-repeat:no-repeat;height:340px;position:relative;transition:transform 0.35s ease,box-shadow 0.35s ease" style-hover="transform:translateY(-8px);box-shadow:0 24px 60px rgba(0,0,0,0.22)">
         <div style="position:absolute;inset:0;background:linear-gradient(to top, rgba(0,0,0,0.72) 0%, rgba(0,0,0,0.1) 55%, transparent 100%)"></div>
         <div style="position:absolute;bottom:0;left:0;right:0;padding:32px">
-          <div style="font-size:10px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:rgba(255,255,255,0.5);margin-bottom:8px">{{ cat.startingFrom }}</div>
+          <div style="font-size:10px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:rgba(255,255,255,.79);margin-bottom:8px">{{ cat.startingFrom }}</div>
           <div style="font-family:'Cormorant Garamond',serif;font-size:34px;font-weight:600;color:#fff;margin-bottom:6px;line-height:1">{{ cat.name }}</div>
-          <div style="font-size:12px;color:rgba(255,255,255,0.45);display:flex;align-items:center;gap:6px">{{ cat.count }} <span style="color:#C9A84C">→</span></div>
+          <div style="font-size:12px;color:rgba(255,255,255,.79);display:flex;align-items:center;gap:6px">{{ cat.count }} <span style="color:#C9A84C">→</span></div>
         </div>
         <div style="position:absolute;top:20px;right:20px;width:36px;height:36px;border:1px solid rgba(255,255,255,0.2);border-radius:50%;display:flex;align-items:center;justify-content:center">
-          <span style="color:rgba(255,255,255,0.5);font-size:14px">↗</span>
+          <span style="color:rgba(255,255,255,.79);font-size:14px">↗</span>
         </div>
       </div>
     </sc-for>
@@ -158,11 +158,11 @@ window.MASUL_MENU=[{"cat": "Breakfast", "name": "Ful Medames", "price": 6}, {"ca
   <div style="background:#0A1F14;padding:90px 72px;display:flex;flex-direction:column;justify-content:center">
     <div style="font-size:10px;font-weight:600;letter-spacing:4px;text-transform:uppercase;color:#C9A84C;margin-bottom:22px">Our Signature</div>
     <h2 style="font-family:'Cormorant Garamond',serif;font-size:68px;font-weight:600;color:#fff;line-height:1;margin-bottom:6px">Haniid</h2>
-    <div style="font-family:'Cormorant Garamond',serif;font-size:22px;font-style:italic;color:rgba(255,255,255,0.4);margin-bottom:32px">Lamb Shank / Shoulder</div>
+    <div style="font-family:'Cormorant Garamond',serif;font-size:22px;font-style:italic;color:rgba(255,255,255,.48);margin-bottom:32px">Lamb Shank / Shoulder</div>
     <p style="font-size:15px;line-height:1.9;color:rgba(255,255,255,0.58);margin-bottom:36px;max-width:380px">Slow-cooked for hours in a rich blend of traditional Somali herbs and spices. Tender, aromatic, and utterly unforgettable — served with your choice of rice or pasta.</p>
     <div style="display:flex;align-items:baseline;gap:10px;margin-bottom:42px">
       <div style="font-family:'Cormorant Garamond',serif;font-size:48px;font-weight:600;color:#C9A84C">£13</div>
-      <div style="font-size:12px;color:rgba(255,255,255,0.35)">incl. rice or pasta</div>
+      <div style="font-size:12px;color:rgba(255,255,255,.48)">incl. rice or pasta</div>
     </div>
     <div style="display:flex;gap:12px">
       <a data-masul-open="order" href="#" style="background:#2D6A4F;color:#fff;font-size:12px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;padding:14px 32px;border-radius:2px;text-decoration:none;transition:background 0.2s" style-hover="background:#40916C">Order Now</a>
@@ -198,7 +198,7 @@ window.MASUL_MENU=[{"cat": "Breakfast", "name": "Ful Medames", "price": 6}, {"ca
   <div style="font-size:10px;font-weight:600;letter-spacing:4px;text-transform:uppercase;color:#C9A84C;margin-bottom:28px">What Our Guests Say</div>
   <div style="font-size:20px;color:#C9A84C;margin-bottom:36px;letter-spacing:4px">★★★★★</div>
   <blockquote style="font-family:'Cormorant Garamond',serif;font-size:clamp(22px,3vw,36px);font-style:italic;color:#fff;max-width:740px;margin:0 auto 22px;line-height:1.5;min-height:108px;display:flex;align-items:center;justify-content:center">"{{ currentTestimonial.text }}"</blockquote>
-  <div style="font-size:12px;font-weight:500;letter-spacing:2.5px;text-transform:uppercase;color:rgba(255,255,255,0.35);margin-bottom:48px">— {{ currentTestimonial.author }}</div>
+  <div style="font-size:12px;font-weight:500;letter-spacing:2.5px;text-transform:uppercase;color:rgba(255,255,255,.48);margin-bottom:48px">— {{ currentTestimonial.author }}</div>
   <div style="display:flex;justify-content:center;gap:12px">
     <sc-for list="{{ dots }}" as="dot" hint-placeholder-count="3">
       <div onClick="{{ dot.onClick }}" style="width:8px;height:8px;border-radius:50%;background:{{ dot.bg }};cursor:pointer;transition:background 0.4s,transform 0.2s" style-hover="transform:scale(1.3)"></div>
@@ -210,27 +210,27 @@ window.MASUL_MENU=[{"cat": "Breakfast", "name": "Ful Medames", "price": 6}, {"ca
 <section id="reserve" style="background:#2D6A4F;padding:90px 64px">
   <div style="max-width:960px;margin:0 auto">
     <div style="text-align:center;margin-bottom:52px">
-      <div style="font-size:10px;font-weight:600;letter-spacing:4px;text-transform:uppercase;color:rgba(255,255,255,0.5);margin-bottom:14px">Book Online</div>
+      <div style="font-size:10px;font-weight:600;letter-spacing:4px;text-transform:uppercase;color:rgba(255,255,255,.79);margin-bottom:14px">Book Online</div>
       <h2 style="font-family:'Cormorant Garamond',serif;font-size:clamp(36px,4vw,54px);font-weight:600;color:#fff;line-height:1.05;margin-bottom:10px">Reserve Your Table</h2>
-      <p style="font-size:13px;color:rgba(255,255,255,0.54);letter-spacing:0.5px">Walk-ins welcome · Booking recommended Thursday – Sunday</p>
+      <p style="font-size:13px;color:rgba(255,255,255,.79);letter-spacing:0.5px">Walk-ins welcome · Booking recommended Thursday – Sunday</p>
     </div>
     <div style="display:grid;grid-template-columns:1fr 1fr 1fr 1fr auto;gap:14px;align-items:end">
       <div>
-        <label style="font-size:10px;font-weight:600;letter-spacing:2.5px;text-transform:uppercase;color:rgba(255,255,255,0.45);display:block;margin-bottom:10px">Date</label>
+        <label style="font-size:10px;font-weight:600;letter-spacing:2.5px;text-transform:uppercase;color:rgba(255,255,255,.79);display:block;margin-bottom:10px">Date</label>
         <input type="date" style="width:100%;background:rgba(255,255,255,0.09);border:1px solid rgba(255,255,255,0.18);border-radius:2px;padding:14px 16px;color:#fff;font-family:'DM Sans',sans-serif;font-size:14px;outline:none;transition:border-color 0.2s" style-focus="border-color:rgba(255,255,255,0.5)">
       </div>
       <div>
-        <label style="font-size:10px;font-weight:600;letter-spacing:2.5px;text-transform:uppercase;color:rgba(255,255,255,0.45);display:block;margin-bottom:10px">Time</label>
+        <label style="font-size:10px;font-weight:600;letter-spacing:2.5px;text-transform:uppercase;color:rgba(255,255,255,.79);display:block;margin-bottom:10px">Time</label>
         <input type="time" style="width:100%;background:rgba(255,255,255,0.09);border:1px solid rgba(255,255,255,0.18);border-radius:2px;padding:14px 16px;color:#fff;font-family:'DM Sans',sans-serif;font-size:14px;outline:none;transition:border-color 0.2s">
       </div>
       <div>
-        <label style="font-size:10px;font-weight:600;letter-spacing:2.5px;text-transform:uppercase;color:rgba(255,255,255,0.45);display:block;margin-bottom:10px">Guests</label>
+        <label style="font-size:10px;font-weight:600;letter-spacing:2.5px;text-transform:uppercase;color:rgba(255,255,255,.79);display:block;margin-bottom:10px">Guests</label>
         <select style="width:100%;background:rgba(255,255,255,0.09);border:1px solid rgba(255,255,255,0.18);border-radius:2px;padding:14px 16px;color:#fff;font-family:'DM Sans',sans-serif;font-size:14px;outline:none;appearance:none;cursor:pointer">
           <option>1 guest</option><option>2 guests</option><option>3 guests</option><option>4 guests</option><option>5 guests</option><option>6+ guests</option>
         </select>
       </div>
       <div>
-        <label style="font-size:10px;font-weight:600;letter-spacing:2.5px;text-transform:uppercase;color:rgba(255,255,255,0.45);display:block;margin-bottom:10px">Your Name</label>
+        <label style="font-size:10px;font-weight:600;letter-spacing:2.5px;text-transform:uppercase;color:rgba(255,255,255,.79);display:block;margin-bottom:10px">Your Name</label>
         <input type="text" placeholder="Full name" style="width:100%;background:rgba(255,255,255,0.09);border:1px solid rgba(255,255,255,0.18);border-radius:2px;padding:14px 16px;color:#fff;font-family:'DM Sans',sans-serif;font-size:14px;outline:none;transition:border-color 0.2s">
       </div>
       <button type="button" data-masul-open="booking" style="background:#C9A84C;color:#0A1F14;border:none;border-radius:2px;padding:15px 30px;font-family:'DM Sans',sans-serif;font-size:12px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;cursor:pointer;white-space:nowrap;transition:background 0.2s" style-hover="background:#E9D283">Book Now</button>
@@ -269,7 +269,7 @@ window.MASUL_MENU=[{"cat": "Breakfast", "name": "Ful Medames", "price": 6}, {"ca
       <div style="font-size:36px;position:relative">📍</div>
       <div style="text-align:center;position:relative">
         <div style="font-family:'Cormorant Garamond',serif;font-size:22px;color:#fff;margin-bottom:6px">Damal Restaurant</div>
-        <div style="font-size:13px;color:rgba(255,255,255,0.4);font-style:italic">Stepney Green, East London</div>
+        <div style="font-size:13px;color:rgba(255,255,255,.48);font-style:italic">Stepney Green, East London</div>
       </div>
       <a href="https://maps.google.com/?q=Damal+Restaurant+110+Mile+End+Road+London+E1+4UN" target="_blank" style="position:relative;background:#C9A84C;color:#0A1F14;font-size:11px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;padding:11px 26px;border-radius:2px;text-decoration:none;margin-top:8px;transition:background 0.2s" style-hover="background:#E9D283" rel="noopener">Get Directions</a>
     </div>
@@ -282,7 +282,7 @@ window.MASUL_MENU=[{"cat": "Breakfast", "name": "Ful Medames", "price": 6}, {"ca
   <div>
     <div style="font-size:10px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#C9A84C;margin-bottom:10px">Sister Venue</div>
     <div style="font-family:'Cormorant Garamond',serif;font-size:36px;font-weight:600;color:#fff;margin-bottom:8px">Damal Banqueting</div>
-    <div style="font-size:14px;color:rgba(255,255,255,0.44);margin-bottom:18px;max-width:480px">Private events, weddings, corporate dining — East London's premier Somali banqueting hall</div>
+    <div style="font-size:14px;color:rgba(255,255,255,.47);margin-bottom:18px;max-width:480px">Private events, weddings, corporate dining — East London's premier Somali banqueting hall</div>
     <a href="https://www.damalbanqueting.com" target="_blank" style="font-size:11px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:#C9A84C;text-decoration:none;border-bottom:1px solid rgba(201,168,76,0.38);padding-bottom:3px;transition:opacity 0.2s" style-hover="opacity:0.65" rel="noopener">Visit Damal Banqueting →</a>
   </div>
 </section>
@@ -292,44 +292,44 @@ window.MASUL_MENU=[{"cat": "Breakfast", "name": "Ful Medames", "price": 6}, {"ca
   <div style="display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:64px;max-width:1280px;margin:0 auto;padding-bottom:60px;border-bottom:1px solid rgba(255,255,255,0.055)">
     <div>
       <img src="/img/logo.png" alt="Damal" style="height:26px;object-fit:contain;opacity:0.6;margin-bottom:22px;display:block">
-      <p style="font-size:13px;line-height:1.85;color:rgba(255,255,255,0.26);max-width:210px;margin-bottom:28px">Bringing the authentic flavours of Somalia to the vibrant streets of East London.</p>
+      <p style="font-size:13px;line-height:1.85;color:rgba(255,255,255,.48);max-width:210px;margin-bottom:28px">Bringing the authentic flavours of Somalia to the vibrant streets of East London.</p>
       <div style="display:flex;gap:18px">
-        <a href="https://www.instagram.com/damalrestaurant/" target="_blank" rel="noopener" style="font-size:11px;font-weight:600;letter-spacing:1px;text-transform:uppercase;color:rgba(255,255,255,0.28);text-decoration:none;transition:color 0.2s" style-hover="color:#C9A84C">IG</a>
-        <a href="https://www.tiktok.com/@damalrestaurant" target="_blank" rel="noopener" style="font-size:11px;font-weight:600;letter-spacing:1px;text-transform:uppercase;color:rgba(255,255,255,0.28);text-decoration:none;transition:color 0.2s" style-hover="color:#C9A84C">TT</a>
-        <a aria-disabled="true" tabindex="-1" style="font-size:11px;font-weight:600;letter-spacing:1px;text-transform:uppercase;color:rgba(255,255,255,0.28);text-decoration:none;transition:color 0.2s" style-hover="color:#C9A84C">FB</a>
+        <a href="https://www.instagram.com/damalrestaurant/" target="_blank" rel="noopener" style="font-size:11px;font-weight:600;letter-spacing:1px;text-transform:uppercase;color:rgba(255,255,255,.46);text-decoration:none;transition:color 0.2s" style-hover="color:#C9A84C">IG</a>
+        <a href="https://www.tiktok.com/@damalrestaurant" target="_blank" rel="noopener" style="font-size:11px;font-weight:600;letter-spacing:1px;text-transform:uppercase;color:rgba(255,255,255,.46);text-decoration:none;transition:color 0.2s" style-hover="color:#C9A84C">TT</a>
+        <a aria-disabled="true" tabindex="-1" style="font-size:11px;font-weight:600;letter-spacing:1px;text-transform:uppercase;color:rgba(255,255,255,.46);text-decoration:none;transition:color 0.2s" style-hover="color:#C9A84C">FB</a>
       </div>
     </div>
     <div>
-      <div style="font-size:10px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:rgba(255,255,255,0.18);margin-bottom:22px">Navigate</div>
+      <div style="font-size:10px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:rgba(255,255,255,.46);margin-bottom:22px">Navigate</div>
       <div style="display:flex;flex-direction:column;gap:14px">
-        <a href="menu.dc.html" style="font-size:13px;color:rgba(255,255,255,0.38);text-decoration:none;transition:color 0.2s" style-hover="color:#fff">Menu</a>
-        <a href="about.dc.html" style="font-size:13px;color:rgba(255,255,255,0.38);text-decoration:none;transition:color 0.2s" style-hover="color:#fff">About Us</a>
-        <a href="gallery.dc.html" style="font-size:13px;color:rgba(255,255,255,0.38);text-decoration:none;transition:color 0.2s" style-hover="color:#fff">Gallery</a>
-        <a href="charity.dc.html" style="font-size:13px;color:rgba(255,255,255,0.38);text-decoration:none;transition:color 0.2s" style-hover="color:#fff">Charity</a>
-        <a href="location.dc.html" style="font-size:13px;color:rgba(255,255,255,0.38);text-decoration:none;transition:color 0.2s" style-hover="color:#fff">Location</a>
+        <a href="menu.dc.html" style="font-size:13px;color:rgba(255,255,255,.48);text-decoration:none;transition:color 0.2s" style-hover="color:#fff">Menu</a>
+        <a href="about.dc.html" style="font-size:13px;color:rgba(255,255,255,.48);text-decoration:none;transition:color 0.2s" style-hover="color:#fff">About Us</a>
+        <a href="gallery.dc.html" style="font-size:13px;color:rgba(255,255,255,.48);text-decoration:none;transition:color 0.2s" style-hover="color:#fff">Gallery</a>
+        <a href="charity.dc.html" style="font-size:13px;color:rgba(255,255,255,.48);text-decoration:none;transition:color 0.2s" style-hover="color:#fff">Charity</a>
+        <a href="location.dc.html" style="font-size:13px;color:rgba(255,255,255,.48);text-decoration:none;transition:color 0.2s" style-hover="color:#fff">Location</a>
       </div>
     </div>
     <div>
-      <div style="font-size:10px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:rgba(255,255,255,0.18);margin-bottom:22px">Order &amp; Book</div>
+      <div style="font-size:10px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:rgba(255,255,255,.46);margin-bottom:22px">Order &amp; Book</div>
       <div style="display:flex;flex-direction:column;gap:14px">
-        <a data-masul-open="order" href="#" style="font-size:13px;color:rgba(255,255,255,0.38);text-decoration:none;transition:color 0.2s" style-hover="color:#fff">Order Online</a>
-        <a data-masul-open="booking" href="#" style="font-size:13px;color:rgba(255,255,255,0.38);text-decoration:none;transition:color 0.2s" style-hover="color:#fff">Book a Table</a>
-        <a href="https://www.damalbanqueting.com" style="font-size:13px;color:rgba(255,255,255,0.38);text-decoration:none;transition:color 0.2s" style-hover="color:#fff">Damal Banqueting</a>
-        <a href="account.dc.html" style="font-size:13px;color:rgba(255,255,255,0.38);text-decoration:none;transition:color 0.2s" style-hover="color:#fff">Loyalty Rewards</a>
+        <a data-masul-open="order" href="#" style="font-size:13px;color:rgba(255,255,255,.48);text-decoration:none;transition:color 0.2s" style-hover="color:#fff">Order Online</a>
+        <a data-masul-open="booking" href="#" style="font-size:13px;color:rgba(255,255,255,.48);text-decoration:none;transition:color 0.2s" style-hover="color:#fff">Book a Table</a>
+        <a href="https://www.damalbanqueting.com" style="font-size:13px;color:rgba(255,255,255,.48);text-decoration:none;transition:color 0.2s" style-hover="color:#fff">Damal Banqueting</a>
+        <a href="account.dc.html" style="font-size:13px;color:rgba(255,255,255,.48);text-decoration:none;transition:color 0.2s" style-hover="color:#fff">Loyalty Rewards</a>
       </div>
     </div>
     <div>
-      <div style="font-size:10px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:rgba(255,255,255,0.18);margin-bottom:22px">Legal</div>
+      <div style="font-size:10px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:rgba(255,255,255,.46);margin-bottom:22px">Legal</div>
       <div style="display:flex;flex-direction:column;gap:14px">
-        <a href="https://damalrestaurant.uk/privacy-policy/" target="_blank" rel="noopener" style="font-size:13px;color:rgba(255,255,255,0.38);text-decoration:none;transition:color 0.2s" style-hover="color:#fff">Privacy Policy</a>
-        <a href="https://damalrestaurant.uk/cookie-policy-uk/" target="_blank" rel="noopener" style="font-size:13px;color:rgba(255,255,255,0.38);text-decoration:none;transition:color 0.2s" style-hover="color:#fff">Cookie Policy</a>
-        <a href="https://damalrestaurant.uk/terms-and-conditions/" target="_blank" rel="noopener" style="font-size:13px;color:rgba(255,255,255,0.38);text-decoration:none;transition:color 0.2s" style-hover="color:#fff">Terms &amp; Conditions</a>
+        <a href="https://damalrestaurant.uk/privacy-policy/" target="_blank" rel="noopener" style="font-size:13px;color:rgba(255,255,255,.48);text-decoration:none;transition:color 0.2s" style-hover="color:#fff">Privacy Policy</a>
+        <a href="https://damalrestaurant.uk/cookie-policy-uk/" target="_blank" rel="noopener" style="font-size:13px;color:rgba(255,255,255,.48);text-decoration:none;transition:color 0.2s" style-hover="color:#fff">Cookie Policy</a>
+        <a href="https://damalrestaurant.uk/terms-and-conditions/" target="_blank" rel="noopener" style="font-size:13px;color:rgba(255,255,255,.48);text-decoration:none;transition:color 0.2s" style-hover="color:#fff">Terms &amp; Conditions</a>
       </div>
     </div>
   </div>
   <div style="max-width:1280px;margin:28px auto 0;display:flex;justify-content:space-between;align-items:center">
-    <p style="font-size:12px;color:rgba(255,255,255,0.17)">© 2026 Damal Restaurant. All rights reserved.</p>
-    <p style="font-size:12px;color:rgba(255,255,255,0.12)">Stepney Green, East London</p>
+    <p style="font-size:12px;color:rgba(255,255,255,.46)">© 2026 Damal Restaurant. All rights reserved.</p>
+    <p style="font-size:12px;color:rgba(255,255,255,.46)">Stepney Green, East London</p>
   </div>
 </footer>
 
