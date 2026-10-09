@@ -35,6 +35,36 @@ body {
     white-space: nowrap !important;
   }
 
+  /* Right-hand nav group (Sign In / Cart / Order Now on menu + about):
+     keep it on one row. Wrapping stacked it into a ~185px fixed header
+     that covered the menu page title at phone width. */
+  nav > div:last-of-type {
+    flex-wrap: nowrap !important;
+    gap: 8px !important;
+    margin-left: auto;
+  }
+
+  nav > div:last-of-type > a:not([data-masul-open]) {
+    display: none !important;
+  }
+
+  nav > div:last-of-type > a[data-masul-open] {
+    padding: 10px 14px !important;
+    font-size: 11px !important;
+    white-space: nowrap !important;
+  }
+
+  nav > div:last-of-type > div {
+    flex-wrap: nowrap !important;
+    padding: 9px 12px !important;
+  }
+
+  /* the page-level [style*="display: flex"]{flex-wrap:wrap} rule outranks
+     plain `nav`, so pin the bar itself to one row */
+  nav[style] {
+    flex-wrap: nowrap !important;
+  }
+
   [style*="grid-template-columns"] {
     grid-template-columns: minmax(0, 1fr) !important;
   }
@@ -100,6 +130,18 @@ body {
   }
 }
 
+@media (max-width: 380px) {
+  nav > img,
+  nav > a:first-child img {
+    width: min(104px, 28vw) !important;
+  }
+
+  nav > div:last-of-type > a[data-masul-open] {
+    padding: 10px 10px !important;
+    letter-spacing: 1px !important;
+  }
+}
+
 @media (max-width: 420px) {
   [style*="letter-spacing: 5px"],
   [style*="letter-spacing: 4px"] {
@@ -110,5 +152,14 @@ body {
     flex: 1 1 100%;
     justify-content: center;
     text-align: center;
+  }
+}
+
+/* 761-900px (tablet portrait): the desktop nav ran ~6px past the edge on the
+   menu page; trim the bar's side padding only in this range */
+@media (min-width: 761px) and (max-width: 900px) {
+  nav[style] {
+    padding-left: 28px !important;
+    padding-right: 28px !important;
   }
 }
